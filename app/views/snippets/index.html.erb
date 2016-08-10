@@ -1,0 +1,18 @@
+<h1>Listing of Snippets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Snippet</th>
+      <th>Created at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @snippets.each do |snippet| %>
+      <tr>
+        <td><%= "Snippet S#{snippet.id}" %></td>
+        <td><%= snippet.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
