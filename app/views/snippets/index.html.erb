@@ -11,7 +11,7 @@
     <% @snippets.each do |snippet| %>
       <tr>
         <td><%= "Snippet S#{snippet.id}" %></td>
-        <td><%= snippet.created_at %></td>
+        <td><%= snippet.created_at.to_formatted_s(:long_ordinal) %></td>
       </tr>
     <% end %>
   </tbody>
